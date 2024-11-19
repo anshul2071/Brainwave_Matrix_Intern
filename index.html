@@ -77,46 +77,71 @@
                     "Step into the world of limitless possibilities. Whether you're a gamer, a creator, or a tech enthusiast, our PC customizer lets you craft your dream machine with ease. Explore a wide range of components tailored to meet your unique needs. From cutting-edge CPUs to high-performance GPUs, we’ve got everything you need to power your passion. Let your imagination run wild and create a PC that’s as unique as you are."
                 </p>
             
-                <form action="/">
+                <form action="/" class="pc-builder-form">
                     <div class="input-row">
                         <!-- Processor Input -->
                         <div class="input-group">
                             <h5>Processor</h5>
-                            <div>
+                            <div class="dropdown">
                                 <span><i class="ri-cpu-line"></i></span>
-                                <input type="text" placeholder="Select Processor" />
+                                <select>
+                                    <option value="" disabled selected>Select Processor</option>
+                                    <option value="intel-i5">Intel Core i5</option>
+                                    <option value="intel-i7">Intel Core i7</option>
+                                    <option value="amd-ryzen5">AMD Ryzen 5</option>
+                                    <option value="amd-ryzen7">AMD Ryzen 7</option>
+                                </select>
                             </div>
                         </div>
-            
+                
                         <!-- Graphics Card Input -->
                         <div class="input-group">
                             <h5>Graphics Card</h5>
-                            <div>
+                            <div class="dropdown">
                                 <span><i class="ri-cpu-line"></i></span>
-                                <input type="text" placeholder="Select Graphics Card" />
+                                <select>
+                                    <option value="" disabled selected>Select Graphics Card</option>
+                                    <option value="nvidia-rtx3060">NVIDIA RTX 3060</option>
+                                    <option value="nvidia-rtx3070">NVIDIA RTX 3070</option>
+                                    <option value="amd-radeon6600">AMD Radeon 6600</option>
+                                    <option value="amd-radeon6700">AMD Radeon 6700</option>
+                                </select>
                             </div>
                         </div>
-            
+                
                         <!-- Storage Input -->
                         <div class="input-group">
                             <h5>Storage</h5>
-                            <div>
+                            <div class="dropdown">
                                 <span><i class="ri-hard-drive-3-line"></i></span>
-                                <input type="text" placeholder="Select Hard Drive" />
+                                <select>
+                                    <option value="" disabled selected>Select Storage</option>
+                                    <option value="500gb-ssd">500GB SSD</option>
+                                    <option value="1tb-ssd">1TB SSD</option>
+                                    <option value="2tb-hdd">2TB HDD</option>
+                                    <option value="4tb-hdd">4TB HDD</option>
+                                </select>
                             </div>
                         </div>
-            
+                
                         <!-- Memory Input -->
                         <div class="input-group">
                             <h5>Memory</h5>
-                            <div>
+                            <div class="dropdown">
                                 <span><i class="ri-ram-line"></i></span>
-                                <input type="text" placeholder="Select RAM" />
+                                <select>
+                                    <option value="" disabled selected>Select RAM</option>
+                                    <option value="8gb-ddr4">8GB DDR4</option>
+                                    <option value="16gb-ddr4">16GB DDR4</option>
+                                    <option value="32gb-ddr4">32GB DDR4</option>
+                                    <option value="64gb-ddr4">64GB DDR4</option>
+                                </select>
                             </div>
                         </div>
                     </div>
-                    <button type="submit">Build Now</button>
+                    <button type="submit" class="build-btn">Build Now</button>
                 </form>
+                
                 <div class="bar">
                     Copyright © 2024 CustomX. All rights reserved.
 
