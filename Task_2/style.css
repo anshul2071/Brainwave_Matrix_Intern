@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #def0fa;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left:0;
+
+}
+
+
+.logo {
+    width: 180px; 
+    height: auto; 
+    margin: 0; 
+    cursor: pointer; 
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar li a:hover{
+    color: #e0efee;
+
+}
+#navbar li a:hover,
+#navbar li a.active {
+    color: #79bbee;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    background: #79bbee;
+    bottom: -4px;
+    left: 20px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8em; 
+    font-weight: 500;
+    color: #333; 
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em; 
+    font-weight: 400;
+    color: #555; 
+    letter-spacing: 0.5px;
+    text-transform: none;
+    margin: 8px 0;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4em; 
+    font-weight: 300;
+    color: #777; 
+    text-transform: none;
+    line-height: 1.4;
+    margin: 15px 0 5px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.95em; 
+    font-weight: 300;
+    color: #666; 
+    max-width: 600px; 
+    margin: 10px auto; 
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px; 
+    min-height: 60vh; 
+    background: #f9f9f9; 
+    border-radius: 10px;
+    background-image: url("img/hero4.png");
+    height: 90vh;
+    width: 100%;
+}
+
+
+button {
+    background-color: #fff;
+    color: #ff6a00;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #ff6a00;
+    color: white;
+    transform: scale(1.05);
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+#feature {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    gap: 15px;
+}
+
+#feature .fe-box {
+    width: 210px;
+    height: 200px;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #d9e7dd;
+    border-radius: 6px;
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#feature .fe-box:hover {
+    transform: scale(1.05);
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+#feature .fe-box img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h6 {
+    font-size: 12px;
+    color: #2b919a;
+    margin: 5px 0 0;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#feature .fe-box:nth-child(2) h6 {
+    font-size: 12px;
+    color: #516281;
+    margin: 5px 0 0;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#feature .fe-box:nth-child(3) h6 {
+    font-size: 12px;
+    color: #d88be2;
+    margin: 5px 0 0;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#feature .fe-box:nth-child(4) h6 {
+    font-size: 12px;
+    color: #a0e994;
+    margin: 5px 0 0;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#feature .fe-box:nth-child(5) h6 {
+    font-size: 12px;
+    color: #a13934;
+    margin: 5px 0 0;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#feature .fe-box:nth-child(6) h6 {
+    font-size: 12px;
+    color: #1b5dd8;
+    margin: 5px 0 0;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Section Styling */
+#product {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+#product h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+#product p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+/* Product Container */
+.pro-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+/* Product Card */
+.pro {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px; /* Fixed width for all cards */
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column; /* Ensures alignment of all elements */
+}
+
+.pro:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image */
+.pro img {
+    width: 100%;
+    height: 300px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures the image fills the container perfectly */
+    border-bottom: 2px solid #f1f1f1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pro:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Product Description */
+.des {
+    padding: 1rem;
+    text-align: center; /* Center-aligned for consistency */
+}
+
+.des span {
+    font-size: 0.9rem;
+    color: #888;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.des h5 {
+    font-size: 1.3rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.rating {
+    color: #ffc107;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+
+
+
+.price {
+    font-size: 1.2rem;
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/* Product Buttons */
+.pro-btns {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eaeaea;
+    margin-top: auto;
+} 
+.pro-btns a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    flex: 1; 
+    text-align: center;
+    margin: 0 0.2rem;
+}
+
+
+.cart-btn {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.cart-btn:hover {
+    background-color: #5a6268;
+}
+
+
+.buy-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.buy-btn:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+    .pro-container {
+        gap: 1rem;
+    }
+
+    .pro {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .pro img {
+        height: 250px;
+    }
+}
