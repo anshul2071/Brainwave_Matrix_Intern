@@ -17,6 +17,7 @@
     position: sticky;
     top: 0;
     left:0;
+    
 
 }
 
@@ -65,6 +66,16 @@
     left: 20px;
 }
 
+
+
+
+
+
+
+#mobile {
+    display: none;
+    align-items: center;
+}
 h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 2.8em; 
@@ -802,6 +813,78 @@ footer .logo {
 }
 
 
+#page-header{
+    background-image: url("img/banner5.png");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    background-position: center;
+
+}
+
+#page-header h2{
+    color: #20b3d0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight:bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+
+
+}
+
+
+#page-header p{
+    color: #0a3a44;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight:bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
     #footer {
@@ -817,3 +900,216 @@ footer .logo {
         margin-top: 20px;
     }
 }
+
+
+
+@media (max-width: 799px) {
+
+.section-p1{
+    padding: 40px 40px;
+} 
+
+
+    #navbar {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        height: 100vh;
+        padding: 80px 0 0 0;
+        transition: all 0.3s ease;
+    }
+
+    #navbar.active {
+        right: 0;
+    }
+
+    
+    #navbar li {
+        margin-bottom: 20px;
+        padding: 10px 0; 
+        list-style: none; 
+        text-align: center;
+    }
+
+ 
+    #navbar a {
+        color: #1a1a1a; 
+        text-decoration: none;
+        font-size: 18px;
+        display: block; 
+    }
+
+    #navbar a:hover {
+        color: #4a90e2; 
+        text-decoration: none;
+    }
+
+
+ 
+
+
+
+
+   #mobile {
+    display: block;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+ 
+#mobile i {
+    font-size: 24px;
+    color: #1a1a1a;
+    padding-left: 20px;
+}
+
+#close {
+    
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 24px;
+}
+
+#lg-bag {
+    display: none;
+
+
+}
+#hero{
+    height: 70vh;
+    padding: 0 80px;
+    background-position: top 30% right 30%;
+}
+#feature {
+    justify-content: center;
+
+}
+
+#feature .fe-box {
+    margin: 20px 20px;
+}
+#product1 .pro-container {
+
+    justify-content: center;
+    
+}
+  #product1 .pro {
+     justify-content:center ;
+     margin: 15px;
+  }
+  #banner {
+    height: 35vh;
+  }
+
+  #sm-banner .banner-box {
+    min-width: 100%;
+  }
+
+  #banner3 {
+    padding: 0 40px;
+  }
+#profile{
+    display: none;
+}
+    
+
+
+}
+
+@media (min-width: 800px) {
+
+    #close {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+/* Global Reset */
+
+  
+  /* Section Styling */
+  /* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+
+
+  #blog {
+    background-color: #ecffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+    padding: 40px;
+   margin-right: auto;
+    margin-left: auto;
+  }
+  
+  /* Heading Styling */
+  #blog h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Paragraph Styling */
+ #blog p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  /* Adding a styled separator */
+  #blog p::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #4a90e2;
+    margin: 20px auto;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    body {
+      padding: 20px;
+      
+    }
+    #blog {
+      padding: 20px;
+      width: 100%;
+    }
+    h2 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+  
+
