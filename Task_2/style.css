@@ -249,56 +249,35 @@ body {
 }
 
 
-#product {
-    text-align: center;
-    padding: 2rem 1rem;
-    background-image: url("img/hero4.png");
-   
-}
-
-#product h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 0.5rem;
-}
-
-#product p {
-    font-size: 1.2rem;
-    color: #777;
-    margin-bottom: 2rem;
-    font-style: italic;
-}
-
-
 .pro-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 .pro {
-    background-color: rgb(211, 237, 245);
-    border-radius: 15px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 250px;
     overflow: hidden;
-    width: 300px; 
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
-    flex-direction: column; 
-}
-.pro:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    flex-direction: column;
 }
 
+.pro:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
 
 .pro img {
     width: 100%;
-    height: 300px; 
-    object-fit: cover; 
-    border-bottom: 2px solid #f1f1f1;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 1px solid #eaeaea;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -306,88 +285,90 @@ body {
     transform: scale(1.05);
 }
 
-
 .des {
     padding: 1rem;
-    text-align: center; 
+    text-align: center;
 }
 
 .des span {
-    font-size: 0.9rem;
-    color: #888;
+    font-size: 0.85rem;
+    color: #777;
     text-transform: uppercase;
-    display: block;
-    margin-bottom: 0.5rem;
     font-weight: bold;
 }
 
 .des h5 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #333;
     margin: 0.5rem 0;
 }
 
 .rating {
-    color: #ffc107; 
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-    transition: color 0.3s ease;
+    color: #ffc107;
+    font-size: 1.1rem;
 }
 
 .rating:hover {
-    color: #ff5722; 
+    color: #ff5722;
 }
-
-
-
 
 .price {
-    font-size: 1.2rem;
-    color: #66c5d4;
+    font-size: 1.1rem;
+    color: #27ae60;
     font-weight: bold;
-    margin-top: 0.5rem;
 }
-
 
 .pro-btns {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
-    background: transparent;
+    padding: 0.8rem;
     border-top: 1px solid #eaeaea;
     margin-top: auto;
-} 
-.pro-btns a {
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 0.6rem 1.2rem;
-    border-radius: 25px;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
-    flex: 1; 
-    text-align: center;
-    margin: 0 0.2rem;
 }
 
+.pro-btns a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+    flex: 1;
+    margin: 0 0.2rem;
+    text-align: center;
+}
 
 .cart-btn {
     background-color: #38ced6;
-    color: #ecdfdf;
+    color: #fff;
 }
 
 .cart-btn:hover {
-    background-color: #5a6268;
+    background-color: #32a0b0;
 }
-
 
 .buy-btn {
     background-color: #8acae2;
     color: #fff;
-
 }
 
 .buy-btn:hover {
-    background-color: #0056b3;
+    background-color: #1b6c92;
+}
+
+@media (max-width: 768px) {
+    .pro-container {
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .pro {
+        width: 100%;
+    }
+
+    .pro-btns a {
+        font-size: 0.8rem;
+    }
 }
 
 
@@ -841,24 +822,15 @@ footer .logo {
 
 
 #page-header p{
-    color: #0a3a44;
+    color: #02232a;
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight:bold;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
 
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -997,15 +969,31 @@ footer .logo {
 #feature .fe-box {
     margin: 20px 20px;
 }
-#product1 .pro-container {
 
-    justify-content: center;
-    
+#product {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-image: url("img/hero4.png");
+   
 }
-  #product1 .pro {
-     justify-content:center ;
-     margin: 15px;
-  }
+.pro-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.pro {
+    background-color: rgb(211, 237, 245);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px; 
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column; 
+}
   #banner {
     height: 35vh;
   }
@@ -1111,5 +1099,23 @@ footer .logo {
       font-size: 1em;
     }
   }
-  
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    background-image: url("img/cover.png");
+}
+
+
+.pro-containerZ {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 2rem;
+    
+
+}
+
 

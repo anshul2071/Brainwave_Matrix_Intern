@@ -1,0 +1,306 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+.about-us {
+    margin-top: 60px;
+    padding: 40px 20px;
+   
+    background-image: url("img/hero4.png");
+    font-family: 'Roboto', sans-serif;
+    background-size: cover;
+   
+}
+
+.about-container {
+    text-align: center;
+    margin-bottom: 60px;
+    
+}
+
+.about-container h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.team-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.team-section h2 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: #cffefa;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.team-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 15px;
+}
+
+.team-role {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 8px;
+}
+
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #def0fa;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index:900;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo {
+    width: 180px; 
+    height: auto; 
+    margin: 0; 
+    cursor: pointer; 
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar li a:hover{
+    color: #e0efee;
+
+}
+#navbar li a:hover,
+#navbar li a.active {
+    color: #79bbee;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    background: #79bbee;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+
+@media (max-width: 799px) {
+
+    .section-p1{
+        padding: 40px 40px;
+    } 
+    
+    
+        #navbar {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            top: 0;
+            right: -300px;
+            width: 300px;
+            background-color: #e3e6f3;
+            box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+            height: 100vh;
+            padding: 80px 0 0 0;
+            transition: all 0.3s ease;
+        }
+    
+        #navbar.active {
+            right: 0;
+        }
+    
+        
+        #navbar li {
+            margin-bottom: 20px;
+            padding: 10px 0; 
+            list-style: none; 
+            text-align: center;
+        }
+    
+     
+        #navbar a {
+            color: #1a1a1a; 
+            text-decoration: none;
+            font-size: 18px;
+            display: block; 
+        }
+    
+        #navbar a:hover {
+            color: #4a90e2; 
+            text-decoration: none;
+        }
+    
+    
+     
+    
+    
+    
+    
+       #mobile {
+        display: block;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+    }
+     
+    #mobile i {
+        font-size: 24px;
+        color: #1a1a1a;
+        padding-left: 20px;
+    }
+    
+    #close {
+        
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+    
+    #lg-bag {
+        display: none;
+    
+    
+    }
+    #hero{
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+    #feature {
+        justify-content: center;
+    
+    }
+    
+    #feature .fe-box {
+        margin: 20px 20px;
+    }
+    
+    #product {
+        text-align: center;
+        padding: 2rem 1rem;
+        background-image: url("img/hero4.png");
+       
+    }
+    .pro-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .pro {
+        background-color: rgb(211, 237, 245);
+        border-radius: 15px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 300px; 
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        flex-direction: column; 
+    }
+      #banner {
+        height: 35vh;
+      }
+    
+      #sm-banner .banner-box {
+        min-width: 100%;
+      }
+    
+      #banner3 {
+        padding: 0 40px;
+      }
+    #profile{
+        display: none;
+    }
+        
+    
+    
+    }
+    
+    @media (min-width: 800px) {
+    
+        #close {
+            display: none;
+        }
+    }
+    
+    #mobile {
+        display: none;
+    }
