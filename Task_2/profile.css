@@ -17,7 +17,7 @@ body{
 }
 
 .container{
-    background-color: #fff;
+    background-image: url("img/hero4.png");
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
@@ -40,14 +40,14 @@ body{
 }
 
 .container a{
-    color: #333;
+    color: #4648d5;
     font-size: 13px;
     text-decoration: none;
     margin: 15px 0 10px;
 }
 
 .container button{
-    background-color: #512da8;
+    background-color: #b2e0ea;
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
